@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Catalog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Library Catalog</h1>
+  </header>
+
+  <main>
+    <!-- Section for adding books -->
+    <section id="add-book-section">
+      <h2>Add Book</h2>
+      <form id="add-book-form">
+        <input type="text" id="book-title" placeholder="Title" required>
+        <input type="text" id="book-genre" placeholder="Genre">
+        <input type="number" id="book-year" placeholder="Year">
+        <select id="book-author" required>
+          <option value="" disabled selected>Select Author</option>
+        </select>
+        <button type="submit">Add Book</button>
+      </form>
+    </section>
+
+    <!-- Section for adding authors -->
+    <section id="add-author-section">
+      <h2>Add Author</h2>
+      <form id="add-author-form">
+        <input type="text" id="author-name" placeholder="Author Name" required>
+        <button type="submit">Add Author</button>
+      </form>
+    </section>
+
+    <!-- Section for listing books -->
+    <section id="catalog-section">
+      <h2>Book List</h2>
+      <div id="book-list"></div>
+    </section>
+
+    <!-- Section for listing authors -->
+    <section id="author-section">
+      <h2>Author List</h2>
+      <div id="author-list"></div>
+    </section>
+
+    <!-- Section for managing borrowing records -->
+    <section id="borrowing-section">
+      <h2>Borrowing Records</h2>
+      <form id="add-borrowing-form">
+        <select id="borrowing-book" required>
+          <option value="" disabled selected>Select Book</option>
+        </select>
+        <input type="date" id="borrow-date" required>
+        <input type="date" id="return-date" placeholder="Return Date">
+        <button type="submit">Add Borrowing Record</button>
+      </form>
+
+      <div id="borrowing-list">
+        <h3>Current Borrowing Records</h3>
+        <div id="borrowing-records"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Library Catalog</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
