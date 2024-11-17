@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const borrowingController = require('../controllers/borrowingController');
 
-// Get all borrowing records (with optional date filtering)
+// Get all borrowing records
 router.get('/', borrowingController.getBorrowingRecords);
 
 // Add a new borrowing record

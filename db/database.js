@@ -1,11 +1,11 @@
 const { Pool } = require('pg');
-require('dotenv').config(); // Load environment variables from .env
+require('dotenv').config();
 
 // Create a new pool using the DATABASE_URL
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL, // Use the DATABASE_URL from .env
+  connectionString: process.env.DATABASE_URL,
   ssl: {
-    rejectUnauthorized: false, // Required for hosted databases like Render
+    rejectUnauthorized: false, 
   },
 });
 
