@@ -6,7 +6,8 @@ The program allows users to add, edit, delete, and view books, authors, and borr
 
 The purpose of this software is to help me use databases, and building a user-friendly system.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video]
+https://www.loom.com/share/408dfdcd4b5546a09ade6703e34b140c?sid=32193687-8ab7-4d06-ad0b-b3a052e3f293
 
 ---
 
